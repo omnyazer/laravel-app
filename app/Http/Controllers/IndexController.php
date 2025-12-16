@@ -6,10 +6,8 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-        public function index()
+    public function index()
     {
-    return view('welcome', ['name' => 'Omnya']);
+        return view('welcome', ['name' => 'Omnya']);
     }
-
-
 }
