@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Accueil')
+@section('title', 'Bienvenue')
 
 @section('content')
-    <h2>Bienvenue sur la page d’accueil</h2>
-    <p>Contenu principal de la page</p>
+    <h2>Bienvenue sur le site de {{ $name }}</h2>
 @endsection
