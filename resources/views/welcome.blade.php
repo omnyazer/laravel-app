@@ -11,12 +11,11 @@
         @endif
 
         <x-article
-            :title="$article['title']"
-            :description="$article['description']"
+            :title="$article->title"
+            :description="$article->description"
+            :id="$article->id"
         />
     @empty
-        <p>Aucun article disponible
-            
-        </p>
+        <p>Aucun article disponible</p>
     @endforelse
 @endsection
