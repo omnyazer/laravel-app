@@ -10,11 +10,12 @@
             @break
         @endif
 
-        <x-article
-            :title="$article->title"
-            :description="$article->description"
-            :id="$article->id"
-        />
+        <a href="{{ route('article.details', ['id' => $article->id]) }}">
+            <x-article
+                :title="$article->title"
+                :description="$article->description"
+            />
+        </a>
     @empty
         <p>Aucun article disponible</p>
     @endforelse

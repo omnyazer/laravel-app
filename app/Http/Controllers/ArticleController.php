@@ -53,9 +53,7 @@ class ArticleController extends Controller
         $article = Article::findOrFail($id);
 
         return view('pages.article-details', [
-            'id' => $article->id,
-            'title' => $article->title,
-            'description' => $article->description,
+            'article' => $article,
         ]);
     }
 }
